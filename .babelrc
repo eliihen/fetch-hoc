@@ -1,0 +1,16 @@
+{
+  presets: [
+    ['latest', {
+      es2015: {
+        modules: false
+      }
+    }],
+    'react',
+  ],
+  plugins: [
+    'external-helpers',
+    'transform-class-properties',
+    'transform-object-assign'
+  ]
+}
+

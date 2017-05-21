@@ -1,0 +1,46 @@
+{
+  "name": "fetch-hoc",
+  "version": "0.0.1",
+  "description": "A react HoC for fetching a resource and passing to props",
+  "main": "dist/bundle.js",
+  "module": "src/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production rollup -c"
+  },
+  "author": "Espen Henriksen",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-uglify": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "hoc",
+    "higher",
+    "order",
+    "component",
+    "fetch",
+    "xhr",
+    "data"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esphen/fetch-hoc.git"
+  }
+}
