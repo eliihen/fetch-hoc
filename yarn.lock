@@ -3,12 +3,12 @@
 
 
 "@types/react@^15.0.22":
-  version "15.0.24"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.24.tgz#8a75299dc37906df327c18ca918bf97a55e7123b"
+  version "15.0.25"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.25.tgz#d396949cccc9a90b61755def9781e5aced9b2261"
 
 abab@^1.0.3:
   version "1.0.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
+  resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
 
 abbrev@1:
   version "1.1.0"
@@ -31,8 +31,8 @@ acorn@^3.0.4:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
 acorn@^4.0.1, acorn@^4.0.4:
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.11.tgz#edcda3bd937e7556410d42ed5860f67399c794c0"
+  version "4.0.13"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
 acorn@^5.0.1:
   version "5.0.3"
@@ -44,14 +44,14 @@ ajv-keywords@^1.0.0:
 
 ajv@^4.7.0, ajv@^4.9.1:
   version "4.11.8"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/ajv/-/ajv-4.11.8.tgz#82ffb02b29e662ae53bdc20af15947706739c536"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-4.11.8.tgz#82ffb02b29e662ae53bdc20af15947706739c536"
   dependencies:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
+  resolved "https://registry.yarnpkg.com/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
   dependencies:
     kind-of "^3.0.2"
     longest "^1.0.1"
@@ -63,7 +63,7 @@ amdefine@>=0.0.4:
 
 ansi-escapes@^1.0.0, ansi-escapes@^1.1.0, ansi-escapes@^1.4.0:
   version "1.4.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/ansi-escapes/-/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
+  resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
 
 ansi-regex@^2.0.0, ansi-regex@^2.1.1:
   version "2.1.1"
@@ -81,7 +81,7 @@ ansi-styles@^3.0.0:
 
 anymatch@^1.3.0:
   version "1.3.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/anymatch/-/anymatch-1.3.0.tgz#a3e52fa39168c825ff57b0248126ce5a8ff95507"
+  resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.0.tgz#a3e52fa39168c825ff57b0248126ce5a8ff95507"
   dependencies:
     arrify "^1.0.0"
     micromatch "^2.1.5"
@@ -109,7 +109,7 @@ are-we-there-yet@~1.1.2:
 
 argparse@^1.0.7:
   version "1.0.9"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/argparse/-/argparse-1.0.9.tgz#73d83bc263f86e97f8cc4f6bae1b0e90a7d22c86"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.9.tgz#73d83bc263f86e97f8cc4f6bae1b0e90a7d22c86"
   dependencies:
     sprintf-js "~1.0.2"
 
@@ -125,7 +125,7 @@ arr-flatten@^1.0.1:
 
 array-equal@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
+  resolved "https://registry.yarnpkg.com/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -143,23 +143,23 @@ array-unique@^0.2.1:
 
 arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
+  resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
 asap@~2.0.3:
   version "2.0.5"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/asap/-/asap-2.0.5.tgz#522765b50c3510490e52d7dcfe085ef9ba96958f"
+  resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.5.tgz#522765b50c3510490e52d7dcfe085ef9ba96958f"
 
 asn1@~0.2.3:
   version "0.2.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/asn1/-/asn1-0.2.3.tgz#dac8787713c9966849fc8180777ebe9c1ddf3b86"
+  resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.3.tgz#dac8787713c9966849fc8180777ebe9c1ddf3b86"
 
 assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
+  resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
 
 assert-plus@^0.2.0:
   version "0.2.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/assert-plus/-/assert-plus-0.2.0.tgz#d74e1b87e7affc0db8aadb7021f3fe48101ab234"
+  resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-0.2.0.tgz#d74e1b87e7affc0db8aadb7021f3fe48101ab234"
 
 ast-types@0.9.8:
   version "0.9.8"
@@ -171,21 +171,21 @@ async-each@^1.0.0:
 
 async@^1.4.0:
   version "1.5.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
 async@^2.1.4:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.4.0.tgz#4990200f18ea5b837c2cc4f8c031a6985c385611"
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.4.1.tgz#62a56b279c98a11d0987096a01cc3eeb8eb7bbd7"
   dependencies:
     lodash "^4.14.0"
 
 asynckit@^0.4.0:
   version "0.4.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+  resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
+  resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
 
 aws4@^1.2.1:
   version "1.6.0"
@@ -403,7 +403,7 @@ babel-plugin-external-helpers@^6.22.0:
 
 babel-plugin-istanbul@^4.0.0:
   version "4.1.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/babel-plugin-istanbul/-/babel-plugin-istanbul-4.1.3.tgz#6ee6280410dcf59c7747518c3dfd98680958f102"
+  resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-4.1.3.tgz#6ee6280410dcf59c7747518c3dfd98680958f102"
   dependencies:
     find-up "^2.1.0"
     istanbul-lib-instrument "^1.7.1"
@@ -857,7 +857,7 @@ boolbase@~1.0.0:
 
 boom@2.x.x:
   version "2.10.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
+  resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
 
@@ -896,7 +896,7 @@ bser@^2.0.0:
 
 buffer-shims@~1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/buffer-shims/-/buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51"
+  resolved "https://registry.yarnpkg.com/buffer-shims/-/buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51"
 
 builtin-modules@^1.0.0, builtin-modules@^1.1.0, builtin-modules@^1.1.1:
   version "1.1.1"
@@ -918,11 +918,11 @@ callsites@^2.0.0:
 
 camelcase@^1.0.2:
   version "1.2.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
 
 camelcase@^3.0.0:
   version "3.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
 caseless@~0.11.0:
   version "0.11.0"
@@ -930,11 +930,11 @@ caseless@~0.11.0:
 
 caseless@~0.12.0:
   version "0.12.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
+  resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
 center-align@^0.1.1:
   version "0.1.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
+  resolved "https://registry.yarnpkg.com/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
   dependencies:
     align-text "^0.1.3"
     lazy-cache "^1.0.3"
@@ -1016,7 +1016,7 @@ cli-width@^2.0.0:
 
 cliui@^2.1.0:
   version "2.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
   dependencies:
     center-align "^0.1.1"
     right-align "^0.1.1"
@@ -1024,7 +1024,7 @@ cliui@^2.1.0:
 
 cliui@^3.2.0:
   version "3.2.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
   dependencies:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
@@ -1032,7 +1032,7 @@ cliui@^3.2.0:
 
 co@^4.6.0:
   version "4.6.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
+  resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -1046,11 +1046,11 @@ color-convert@^1.0.0:
 
 color-name@^1.1.1:
   version "1.1.2"
-  resolved "http://npm.osl.manamind.com/color-name/-/color-name-1.1.2.tgz#5c8ab72b64bd2215d617ae9559ebb148475cf98d"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.2.tgz#5c8ab72b64bd2215d617ae9559ebb148475cf98d"
 
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.5"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/combined-stream/-/combined-stream-1.0.5.tgz#938370a57b4a51dea2c77c15d5c5fdf895164009"
+  resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.5.tgz#938370a57b4a51dea2c77c15d5c5fdf895164009"
   dependencies:
     delayed-stream "~1.0.0"
 
@@ -1082,7 +1082,7 @@ contains-path@^0.1.0:
 
 content-type-parser@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/content-type-parser/-/content-type-parser-1.0.1.tgz#c3e56988c53c65127fb46d4032a3a900246fdc94"
+  resolved "https://registry.yarnpkg.com/content-type-parser/-/content-type-parser-1.0.1.tgz#c3e56988c53c65127fb46d4032a3a900246fdc94"
 
 convert-source-map@^1.1.0, convert-source-map@^1.4.0:
   version "1.5.0"
@@ -1090,7 +1090,7 @@ convert-source-map@^1.1.0, convert-source-map@^1.4.0:
 
 core-js@^1.0.0:
   version "1.2.7"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
 core-js@^2.4.0:
   version "2.4.1"
@@ -1098,7 +1098,7 @@ core-js@^2.4.0:
 
 core-util-is@~1.0.0:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
+  resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
 cosmiconfig@^1.1.0:
   version "1.1.0"
@@ -1140,7 +1140,7 @@ cross-spawn@^5.0.1, cross-spawn@^5.1.0:
 
 cryptiles@2.x.x:
   version "2.0.5"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
+  resolved "https://registry.yarnpkg.com/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
   dependencies:
     boom "2.x.x"
 
@@ -1163,7 +1163,7 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
 
 "cssstyle@>= 0.2.37 < 0.3.0":
   version "0.2.37"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
+  resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
   dependencies:
     cssom "0.3.x"
 
@@ -1197,7 +1197,7 @@ debug@^2.1.1, debug@^2.2.0, debug@^2.6.3:
 
 decamelize@^1.0.0, decamelize@^1.1.1:
   version "1.2.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
+  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
 deep-equal-ident@^1.1.1:
   version "1.1.1"
@@ -1211,7 +1211,7 @@ deep-extend@~0.4.0:
 
 deep-is@~0.1.3:
   version "0.1.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
+  resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
 default-require-extensions@^1.0.0:
   version "1.0.0"
@@ -1221,7 +1221,7 @@ default-require-extensions@^1.0.0:
 
 define-properties@^1.1.2:
   version "1.1.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/define-properties/-/define-properties-1.1.2.tgz#83a73f2fea569898fb737193c8f873caf6d45c94"
+  resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.2.tgz#83a73f2fea569898fb737193c8f873caf6d45c94"
   dependencies:
     foreach "^2.0.5"
     object-keys "^1.0.8"
@@ -1240,7 +1240,7 @@ del@^2.0.2:
 
 delayed-stream@~1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -1272,35 +1272,35 @@ doctrine@^2.0.0:
 
 dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
+  resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
   dependencies:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
 domelementtype@1, domelementtype@^1.3.0:
   version "1.3.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/domelementtype/-/domelementtype-1.3.0.tgz#b17aed82e8ab59e52dd9c19b1756e0fc187204c2"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.0.tgz#b17aed82e8ab59e52dd9c19b1756e0fc187204c2"
 
 domelementtype@~1.1.1:
   version "1.1.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
 
 domhandler@^2.3.0:
-  version "2.3.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/domhandler/-/domhandler-2.3.0.tgz#2de59a0822d5027fabff6f032c2b25a2a8abe738"
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-2.4.1.tgz#892e47000a99be55bbf3774ffea0561d8879c259"
   dependencies:
     domelementtype "1"
 
 domutils@1.5.1, domutils@^1.5.1:
   version "1.5.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
+  resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
   dependencies:
     jsbn "~0.1.0"
 
@@ -1310,13 +1310,13 @@ elegant-spinner@^1.0.1:
 
 encoding@^0.1.11:
   version "0.1.12"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
+  resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
   dependencies:
     iconv-lite "~0.4.13"
 
 entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
 enzyme-matchers@^3.1.1:
   version "3.1.1"
@@ -1338,7 +1338,7 @@ enzyme-to-json@^1.5.0:
 
 enzyme@2.8.2:
   version "2.8.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/enzyme/-/enzyme-2.8.2.tgz#6c8bcb05012abc4aa4bc3213fb23780b9b5b1714"
+  resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-2.8.2.tgz#6c8bcb05012abc4aa4bc3213fb23780b9b5b1714"
   dependencies:
     cheerio "^0.22.0"
     function.prototype.name "^1.0.0"
@@ -1353,13 +1353,13 @@ enzyme@2.8.2:
 
 "errno@>=0.1.1 <0.2.0-0":
   version "0.1.4"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/errno/-/errno-0.1.4.tgz#b896e23a9e5e8ba33871fc996abd3635fc9a1c7d"
+  resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.4.tgz#b896e23a9e5e8ba33871fc996abd3635fc9a1c7d"
   dependencies:
     prr "~0.0.0"
 
 error-ex@^1.2.0:
   version "1.3.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
+  resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
   dependencies:
     is-arrayish "^0.2.1"
 
@@ -1374,7 +1374,7 @@ es-abstract@^1.6.1:
 
 es-to-primitive@^1.1.1:
   version "1.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/es-to-primitive/-/es-to-primitive-1.1.1.tgz#45355248a88979034b6792e19bb81f2b7975dd0d"
+  resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.1.1.tgz#45355248a88979034b6792e19bb81f2b7975dd0d"
   dependencies:
     is-callable "^1.1.1"
     is-date-object "^1.0.1"
@@ -1438,7 +1438,7 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
 
 escodegen@^1.6.1:
   version "1.8.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/escodegen/-/escodegen-1.8.1.tgz#5a5b53af4693110bebb0867aa3430dd3b70a1018"
+  resolved "https://registry.yarnpkg.com/escodegen/-/escodegen-1.8.1.tgz#5a5b53af4693110bebb0867aa3430dd3b70a1018"
   dependencies:
     esprima "^2.7.1"
     estraverse "^1.9.1"
@@ -1555,7 +1555,7 @@ espree@^3.4.0:
 
 esprima@^2.6.0, esprima@^2.7.1:
   version "2.7.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
 esprima@^3.1.1:
   version "3.1.3"
@@ -1576,7 +1576,7 @@ esrecurse@^4.1.0:
 
 estraverse@^1.9.1:
   version "1.9.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/estraverse/-/estraverse-1.9.3.tgz#af67f2dc922582415950926091a4005d29c9bb44"
+  resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-1.9.3.tgz#af67f2dc922582415950926091a4005d29c9bb44"
 
 estraverse@^4.0.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
@@ -1651,7 +1651,7 @@ extglob@^0.3.1:
 
 extsprintf@1.0.2:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
+  resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
 
 fast-levenshtein@~2.0.4:
   version "2.0.6"
@@ -1671,7 +1671,7 @@ fb-watchman@^2.0.0:
 
 fbjs@^0.8.9:
   version "0.8.12"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/fbjs/-/fbjs-0.8.12.tgz#10b5d92f76d45575fd63a217d4ea02bea2f8ed04"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.12.tgz#10b5d92f76d45575fd63a217d4ea02bea2f8ed04"
   dependencies:
     core-js "^1.0.0"
     isomorphic-fetch "^2.1.1"
@@ -1722,7 +1722,7 @@ find-parent-dir@^0.3.0:
 
 find-up@^1.0.0:
   version "1.1.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
+  resolved "https://registry.yarnpkg.com/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
   dependencies:
     path-exists "^2.0.0"
     pinkie-promise "^2.0.0"
@@ -1762,11 +1762,11 @@ for-own@^0.1.4:
 
 foreach@^2.0.5:
   version "2.0.5"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
+  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
 
 forever-agent@~0.6.1:
   version "0.6.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
+  resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
 
 form-data@~2.1.1:
   version "2.1.4"
@@ -1782,7 +1782,7 @@ fs-readdir-recursive@^1.0.0:
 
 fs.realpath@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
+  resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 fsevents@^1.0.0:
   version "1.1.1"
@@ -1810,7 +1810,7 @@ fstream@^1.0.0, fstream@^1.0.10, fstream@^1.0.2:
 
 function-bind@^1.0.2, function-bind@^1.1.0:
   version "1.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
+  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
 
 function.prototype.name@^1.0.0:
   version "1.0.0"
@@ -1845,7 +1845,7 @@ generate-object-property@^1.1.0:
 
 get-caller-file@^1.0.1:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
+  resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
 get-stdin@5.0.1, get-stdin@^5.0.1:
   version "5.0.1"
@@ -1874,7 +1874,7 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
-glob@7.1.1, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
+glob@7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -1882,6 +1882,17 @@ glob@7.1.1, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
     inflight "^1.0.4"
     inherits "2"
     minimatch "^3.0.2"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
+glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -1913,8 +1924,8 @@ growly@^1.3.0:
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
 handlebars@^4.0.3:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.8.tgz#22b875cd3f0e6cbea30314f144e82bc7a72ff420"
+  version "4.0.10"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.10.tgz#3d30c718b09a3d96f23ea4cc1f403c4d3ba9ff4f"
   dependencies:
     async "^1.4.0"
     optimist "^0.6.1"
@@ -1924,7 +1935,7 @@ handlebars@^4.0.3:
 
 har-schema@^1.0.5:
   version "1.0.5"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"
+  resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"
 
 har-validator@~2.0.6:
   version "2.0.6"
@@ -1937,7 +1948,7 @@ har-validator@~2.0.6:
 
 har-validator@~4.2.1:
   version "4.2.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/har-validator/-/har-validator-4.2.1.tgz#33481d0f1bbff600dd203d75812a6a5fba002e2a"
+  resolved "https://registry.yarnpkg.com/har-validator/-/har-validator-4.2.1.tgz#33481d0f1bbff600dd203d75812a6a5fba002e2a"
   dependencies:
     ajv "^4.9.1"
     har-schema "^1.0.5"
@@ -1950,7 +1961,7 @@ has-ansi@^2.0.0:
 
 has-flag@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/has-flag/-/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
+  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
 
 has-unicode@^2.0.0:
   version "2.0.1"
@@ -1958,13 +1969,13 @@ has-unicode@^2.0.0:
 
 has@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/has/-/has-1.0.1.tgz#8461733f538b0837c9361e39a9ab9e9704dc2f28"
+  resolved "https://registry.yarnpkg.com/has/-/has-1.0.1.tgz#8461733f538b0837c9361e39a9ab9e9704dc2f28"
   dependencies:
     function-bind "^1.0.2"
 
 hawk@~3.1.3:
   version "3.1.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/hawk/-/hawk-3.1.3.tgz#078444bd7c1640b0fe540d2c9b73d59678e8e1c4"
+  resolved "https://registry.yarnpkg.com/hawk/-/hawk-3.1.3.tgz#078444bd7c1640b0fe540d2c9b73d59678e8e1c4"
   dependencies:
     boom "2.x.x"
     cryptiles "2.x.x"
@@ -1973,7 +1984,7 @@ hawk@~3.1.3:
 
 hoek@2.x.x:
   version "2.16.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -1988,13 +1999,13 @@ hosted-git-info@^2.1.4:
 
 html-encoding-sniffer@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/html-encoding-sniffer/-/html-encoding-sniffer-1.0.1.tgz#79bf7a785ea495fe66165e734153f363ff5437da"
+  resolved "https://registry.yarnpkg.com/html-encoding-sniffer/-/html-encoding-sniffer-1.0.1.tgz#79bf7a785ea495fe66165e734153f363ff5437da"
   dependencies:
     whatwg-encoding "^1.0.1"
 
 htmlparser2@^3.9.1:
   version "3.9.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/htmlparser2/-/htmlparser2-3.9.2.tgz#1bdf87acca0f3f9e53fa4fcceb0f4b4cbb00b338"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.9.2.tgz#1bdf87acca0f3f9e53fa4fcceb0f4b4cbb00b338"
   dependencies:
     domelementtype "^1.3.0"
     domhandler "^2.3.0"
@@ -2005,7 +2016,7 @@ htmlparser2@^3.9.1:
 
 http-signature@~1.1.0:
   version "1.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/http-signature/-/http-signature-1.1.1.tgz#df72e267066cd0ac67fb76adf8e134a8fbcf91bf"
+  resolved "https://registry.yarnpkg.com/http-signature/-/http-signature-1.1.1.tgz#df72e267066cd0ac67fb76adf8e134a8fbcf91bf"
   dependencies:
     assert-plus "^0.2.0"
     jsprim "^1.2.2"
@@ -2020,9 +2031,13 @@ husky@^0.13.3:
     is-ci "^1.0.9"
     normalize-path "^1.0.0"
 
-iconv-lite@0.4.13, iconv-lite@~0.4.13:
+iconv-lite@0.4.13:
   version "0.4.13"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
+
+iconv-lite@~0.4.13:
+  version "0.4.17"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.17.tgz#4fdaa3b38acbc2c031b045d0edcdfe1ecab18c8d"
 
 ignore@^3.2.0:
   version "3.3.3"
@@ -2044,14 +2059,14 @@ indent-string@^3.0.0:
 
 inflight@^1.0.4:
   version "1.0.6"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
+  resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
   dependencies:
     once "^1.3.0"
     wrappy "1"
 
 inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.0, inherits@~2.0.1:
   version "2.0.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
 ini@~1.3.0:
   version "1.3.4"
@@ -2087,11 +2102,11 @@ invariant@^2.2.0:
 
 invert-kv@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
+  resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
 
 is-binary-path@^1.0.0:
   version "1.0.1"
@@ -2105,13 +2120,13 @@ is-buffer@^1.1.5:
 
 is-builtin-module@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-builtin-module/-/is-builtin-module-1.0.0.tgz#540572d34f7ac3119f8f76c30cbc1b1e037affbe"
+  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-1.0.0.tgz#540572d34f7ac3119f8f76c30cbc1b1e037affbe"
   dependencies:
     builtin-modules "^1.0.0"
 
 is-callable@^1.1.1, is-callable@^1.1.2, is-callable@^1.1.3:
   version "1.1.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-callable/-/is-callable-1.1.3.tgz#86eb75392805ddc33af71c92a0eedf74ee7604b2"
+  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.3.tgz#86eb75392805ddc33af71c92a0eedf74ee7604b2"
 
 is-ci@^1.0.10, is-ci@^1.0.9:
   version "1.0.10"
@@ -2121,7 +2136,7 @@ is-ci@^1.0.10, is-ci@^1.0.9:
 
 is-date-object@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-date-object/-/is-date-object-1.0.1.tgz#9aa20eb6aeebbff77fbd33e74ca01b33581d3a16"
+  resolved "https://registry.yarnpkg.com/is-date-object/-/is-date-object-1.0.1.tgz#9aa20eb6aeebbff77fbd33e74ca01b33581d3a16"
 
 is-dotfile@^1.0.0:
   version "1.0.2"
@@ -2149,7 +2164,7 @@ is-finite@^1.0.0:
 
 is-fullwidth-code-point@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz#ef9e31386f031a7f0d643af82fde50c457ef00cb"
+  resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz#ef9e31386f031a7f0d643af82fde50c457ef00cb"
   dependencies:
     number-is-nan "^1.0.0"
 
@@ -2228,23 +2243,23 @@ is-resolvable@^1.0.0:
 
 is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
 is-subset@^0.1.1:
   version "0.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-subset/-/is-subset-0.1.1.tgz#8a59117d932de1de00f245fcdd39ce43f1e939a6"
+  resolved "https://registry.yarnpkg.com/is-subset/-/is-subset-0.1.1.tgz#8a59117d932de1de00f245fcdd39ce43f1e939a6"
 
 is-symbol@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-symbol/-/is-symbol-1.0.1.tgz#3cc59f00025194b6ab2e38dbae6689256b660572"
+  resolved "https://registry.yarnpkg.com/is-symbol/-/is-symbol-1.0.1.tgz#3cc59f00025194b6ab2e38dbae6689256b660572"
 
 is-typedarray@~1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
+  resolved "https://registry.yarnpkg.com/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
 
 is-utf8@^0.2.0:
   version "0.2.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
+  resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
 
 is-windows@^1.0.0:
   version "1.0.1"
@@ -2266,18 +2281,18 @@ isobject@^2.0.0:
 
 isomorphic-fetch@^2.1.1:
   version "2.2.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
+  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
 isstream@~0.1.2:
   version "0.1.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
+  resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
 istanbul-api@^1.1.1:
   version "1.1.8"
-  resolved "https://registry.npmjs.org/istanbul-api/-/istanbul-api-1.1.8.tgz#a844e55c6f9aeee292e7f42942196f60b23dc93e"
+  resolved "https://registry.yarnpkg.com/istanbul-api/-/istanbul-api-1.1.8.tgz#a844e55c6f9aeee292e7f42942196f60b23dc93e"
   dependencies:
     async "^2.1.4"
     fileset "^2.0.2"
@@ -2293,17 +2308,17 @@ istanbul-api@^1.1.1:
 
 istanbul-lib-coverage@^1.0.1, istanbul-lib-coverage@^1.1.0:
   version "1.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.0.tgz#caca19decaef3525b5d6331d701f3f3b7ad48528"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.0.tgz#caca19decaef3525b5d6331d701f3f3b7ad48528"
 
 istanbul-lib-hook@^1.0.6:
   version "1.0.6"
-  resolved "https://registry.npmjs.org/istanbul-lib-hook/-/istanbul-lib-hook-1.0.6.tgz#c0866d1e81cf2d5319249510131fc16dee49231f"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-hook/-/istanbul-lib-hook-1.0.6.tgz#c0866d1e81cf2d5319249510131fc16dee49231f"
   dependencies:
     append-transform "^0.4.0"
 
 istanbul-lib-instrument@^1.4.2, istanbul-lib-instrument@^1.7.1:
   version "1.7.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/istanbul-lib-instrument/-/istanbul-lib-instrument-1.7.1.tgz#169e31bc62c778851a99439dd99c3cc12184d360"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-instrument/-/istanbul-lib-instrument-1.7.1.tgz#169e31bc62c778851a99439dd99c3cc12184d360"
   dependencies:
     babel-generator "^6.18.0"
     babel-template "^6.16.0"
@@ -2315,7 +2330,7 @@ istanbul-lib-instrument@^1.4.2, istanbul-lib-instrument@^1.7.1:
 
 istanbul-lib-report@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.npmjs.org/istanbul-lib-report/-/istanbul-lib-report-1.1.0.tgz#444c4ecca9afa93cf584f56b10f195bf768c0770"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-report/-/istanbul-lib-report-1.1.0.tgz#444c4ecca9afa93cf584f56b10f195bf768c0770"
   dependencies:
     istanbul-lib-coverage "^1.1.0"
     mkdirp "^0.5.1"
@@ -2324,7 +2339,7 @@ istanbul-lib-report@^1.1.0:
 
 istanbul-lib-source-maps@^1.1.0, istanbul-lib-source-maps@^1.2.0:
   version "1.2.0"
-  resolved "https://registry.npmjs.org/istanbul-lib-source-maps/-/istanbul-lib-source-maps-1.2.0.tgz#8c7706d497e26feeb6af3e0c28fd5b0669598d0e"
+  resolved "https://registry.yarnpkg.com/istanbul-lib-source-maps/-/istanbul-lib-source-maps-1.2.0.tgz#8c7706d497e26feeb6af3e0c28fd5b0669598d0e"
   dependencies:
     debug "^2.6.3"
     istanbul-lib-coverage "^1.1.0"
@@ -2334,7 +2349,7 @@ istanbul-lib-source-maps@^1.1.0, istanbul-lib-source-maps@^1.2.0:
 
 istanbul-reports@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.npmjs.org/istanbul-reports/-/istanbul-reports-1.1.0.tgz#1ef3b795889219cfb5fad16365f6ce108d5f8c66"
+  resolved "https://registry.yarnpkg.com/istanbul-reports/-/istanbul-reports-1.1.0.tgz#1ef3b795889219cfb5fad16365f6ce108d5f8c66"
   dependencies:
     handlebars "^4.0.3"
 
@@ -2575,7 +2590,7 @@ jest@^20.0.4:
 
 jodid25519@^1.0.0:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/jodid25519/-/jodid25519-1.0.2.tgz#06d4912255093419477d425633606e0e90782967"
+  resolved "https://registry.yarnpkg.com/jodid25519/-/jodid25519-1.0.2.tgz#06d4912255093419477d425633606e0e90782967"
   dependencies:
     jsbn "~0.1.0"
 
@@ -2603,7 +2618,7 @@ jsbn@~0.1.0:
 
 jsdom@^9.12.0:
   version "9.12.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/jsdom/-/jsdom-9.12.0.tgz#e8c546fffcb06c00d4833ca84410fed7f8a097d4"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-9.12.0.tgz#e8c546fffcb06c00d4833ca84410fed7f8a097d4"
   dependencies:
     abab "^1.0.3"
     acorn "^4.0.4"
@@ -2635,17 +2650,17 @@ jsesc@~0.5.0:
 
 json-schema@0.2.3:
   version "0.2.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/json-schema/-/json-schema-0.2.3.tgz#b480c892e59a2f05954ce727bd3f2a4e882f9e13"
+  resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.2.3.tgz#b480c892e59a2f05954ce727bd3f2a4e882f9e13"
 
 json-stable-stringify@^1.0.0, json-stable-stringify@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
+  resolved "https://registry.yarnpkg.com/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
   dependencies:
     jsonify "~0.0.0"
 
 json-stringify-safe@~5.0.1:
   version "5.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
+  resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
 json5@^0.5.0:
   version "0.5.1"
@@ -2653,7 +2668,7 @@ json5@^0.5.0:
 
 jsonify@~0.0.0:
   version "0.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
+  resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
 
 jsonpointer@^4.0.0:
   version "4.0.1"
@@ -2661,7 +2676,7 @@ jsonpointer@^4.0.0:
 
 jsprim@^1.2.2:
   version "1.4.0"
-  resolved "http://npm.osl.manamind.com/jsprim/-/jsprim-1.4.0.tgz#a3b87e40298d8c380552d8cc7628a0bb95a22918"
+  resolved "https://registry.yarnpkg.com/jsprim/-/jsprim-1.4.0.tgz#a3b87e40298d8c380552d8cc7628a0bb95a22918"
   dependencies:
     assert-plus "1.0.0"
     extsprintf "1.0.2"
@@ -2680,11 +2695,11 @@ kind-of@^3.0.2:
 
 lazy-cache@^1.0.3:
   version "1.0.4"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
+  resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
 
 lcid@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
+  resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
   dependencies:
     invert-kv "^1.0.0"
 
@@ -2698,7 +2713,7 @@ leven@^2.0.0, leven@^2.1.0:
 
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
+  resolved "https://registry.yarnpkg.com/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
@@ -2764,7 +2779,7 @@ listr@^0.12.0:
 
 load-json-file@^1.0.0:
   version "1.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/load-json-file/-/load-json-file-1.1.0.tgz#956905708d58b4bab4c2261b04f59f31c99374c0"
+  resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-1.1.0.tgz#956905708d58b4bab4c2261b04f59f31c99374c0"
   dependencies:
     graceful-fs "^4.1.2"
     parse-json "^2.2.0"
@@ -2881,7 +2896,7 @@ lodash.omitby@^4.5.0:
 
 lodash.pick@^4.2.1:
   version "4.4.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
+  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
 
 lodash.range@^3.2.0:
   version "3.2.0"
@@ -2922,7 +2937,7 @@ log-update@^1.0.2:
 
 longest@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
+  resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.3.1"
@@ -2979,15 +2994,15 @@ micromatch@^2.1.5, micromatch@^2.3.11:
 
 mime-db@~1.27.0:
   version "1.27.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/mime-db/-/mime-db-1.27.0.tgz#820f572296bbd20ec25ed55e5b5de869e5436eb1"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.27.0.tgz#820f572296bbd20ec25ed55e5b5de869e5436eb1"
 
 mime-types@^2.1.12, mime-types@~2.1.7:
   version "2.1.15"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/mime-types/-/mime-types-2.1.15.tgz#a4ebf5064094569237b8cf70046776d09fc92aed"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.15.tgz#a4ebf5064094569237b8cf70046776d09fc92aed"
   dependencies:
     mime-db "~1.27.0"
 
-minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3:
+minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
@@ -2999,7 +3014,7 @@ minimist@0.0.8, minimist@~0.0.1:
 
 minimist@1.2.0, minimist@^1.1.1, minimist@^1.2.0:
   version "1.2.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
 "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1:
   version "0.5.1"
@@ -3025,11 +3040,11 @@ nan@^2.3.0:
 
 natural-compare@^1.4.0:
   version "1.4.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
+  resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
 
 node-fetch@^1.0.1:
-  version "1.6.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/node-fetch/-/node-fetch-1.6.3.tgz#dc234edd6489982d58e8f0db4f695029abcd8c04"
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.0.tgz#3ff6c56544f9b7fb00682338bb55ee6f54a8a0ef"
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
@@ -3040,7 +3055,7 @@ node-int64@^0.4.0:
 
 node-notifier@^5.0.2:
   version "5.1.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/node-notifier/-/node-notifier-5.1.2.tgz#2fa9e12605fa10009d44549d6fcd8a63dde0e4ff"
+  resolved "https://registry.yarnpkg.com/node-notifier/-/node-notifier-5.1.2.tgz#2fa9e12605fa10009d44549d6fcd8a63dde0e4ff"
   dependencies:
     growly "^1.3.0"
     semver "^5.3.0"
@@ -3127,12 +3142,12 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
 "nwmatcher@>= 1.3.9 < 2.0.0":
-  version "1.3.9"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/nwmatcher/-/nwmatcher-1.3.9.tgz#8bab486ff7fa3dfd086656bbe8b17116d3692d2a"
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.4.0.tgz#b4389362170e7ef9798c3c7716d80ebc0106fccf"
 
 oauth-sign@~0.8.1:
   version "0.8.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
+  resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
 
 object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.1"
@@ -3144,7 +3159,7 @@ object-is@^1.0.1:
 
 object-keys@^1.0.10, object-keys@^1.0.8:
   version "1.0.11"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
+  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
 object-values@^1.0.0:
   version "1.0.0"
@@ -3185,7 +3200,7 @@ object.values@^1.0.3:
 
 once@^1.3.0, once@^1.3.3, once@^1.4.0:
   version "1.4.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
+  resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   dependencies:
     wrappy "1"
 
@@ -3202,7 +3217,7 @@ optimist@^0.6.1:
 
 optionator@^0.8.1, optionator@^0.8.2:
   version "0.8.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/optionator/-/optionator-0.8.2.tgz#364c5e409d3f4d6301d6c0b4c05bba50180aeb64"
+  resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.8.2.tgz#364c5e409d3f4d6301d6c0b4c05bba50180aeb64"
   dependencies:
     deep-is "~0.1.3"
     fast-levenshtein "~2.0.4"
@@ -3226,7 +3241,7 @@ os-homedir@^1.0.0, os-homedir@^1.0.1:
 
 os-locale@^1.4.0:
   version "1.4.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/os-locale/-/os-locale-1.4.0.tgz#20f9f17ae29ed345e8bde583b13d2009803c14d9"
+  resolved "https://registry.yarnpkg.com/os-locale/-/os-locale-1.4.0.tgz#20f9f17ae29ed345e8bde583b13d2009803c14d9"
   dependencies:
     lcid "^1.0.0"
 
@@ -3265,7 +3280,7 @@ p-locate@^2.0.0:
 
 p-map@^1.1.1:
   version "1.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/p-map/-/p-map-1.1.1.tgz#05f5e4ae97a068371bc2a5cc86bfbdbc19c4ae7a"
+  resolved "https://registry.yarnpkg.com/p-map/-/p-map-1.1.1.tgz#05f5e4ae97a068371bc2a5cc86bfbdbc19c4ae7a"
 
 parse-glob@^3.0.4:
   version "3.0.4"
@@ -3278,17 +3293,17 @@ parse-glob@^3.0.4:
 
 parse-json@^2.2.0:
   version "2.2.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
+  resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
   dependencies:
     error-ex "^1.2.0"
 
 parse5@^1.5.1:
   version "1.5.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/parse5/-/parse5-1.5.1.tgz#9b7f3b0de32be78dc2401b17573ccaf0f6f59d94"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-1.5.1.tgz#9b7f3b0de32be78dc2401b17573ccaf0f6f59d94"
 
 path-exists@^2.0.0:
   version "2.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/path-exists/-/path-exists-2.1.0.tgz#0feb6c64f0fc518d9a754dd5efb62c7022761f4b"
+  resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-2.1.0.tgz#0feb6c64f0fc518d9a754dd5efb62c7022761f4b"
   dependencies:
     pinkie-promise "^2.0.0"
 
@@ -3314,7 +3329,7 @@ path-parse@^1.0.5:
 
 path-type@^1.0.0:
   version "1.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
+  resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
   dependencies:
     graceful-fs "^4.1.2"
     pify "^2.0.0"
@@ -3328,21 +3343,21 @@ path-type@^2.0.0:
 
 performance-now@^0.2.0:
   version "0.2.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
+  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
 
 pinkie-promise@^2.0.0:
   version "2.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
+  resolved "https://registry.yarnpkg.com/pinkie-promise/-/pinkie-promise-2.0.1.tgz#2135d6dfa7a358c069ac9b178776288228450ffa"
   dependencies:
     pinkie "^2.0.0"
 
 pinkie@^2.0.0:
   version "2.0.4"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
+  resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
 pkg-dir@^1.0.0:
   version "1.0.0"
@@ -3356,7 +3371,7 @@ pluralize@^1.2.1:
 
 prelude-ls@~1.1.2:
   version "1.1.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
+  resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
 
 preserve@^0.2.0:
   version "0.2.0"
@@ -3396,7 +3411,7 @@ private@^0.1.6:
 
 process-nextick-args@~1.0.6:
   version "1.0.7"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
+  resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
 
 progress@^1.1.8:
   version "1.1.8"
@@ -3404,20 +3419,20 @@ progress@^1.1.8:
 
 promise@^7.1.1:
   version "7.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/promise/-/promise-7.1.1.tgz#489654c692616b8aa55b0724fa809bb7db49c5bf"
+  resolved "https://registry.yarnpkg.com/promise/-/promise-7.1.1.tgz#489654c692616b8aa55b0724fa809bb7db49c5bf"
   dependencies:
     asap "~2.0.3"
 
 prop-types@^15.5.4, prop-types@^15.5.7, prop-types@~15.5.7:
   version "15.5.10"
-  resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
     fbjs "^0.8.9"
     loose-envify "^1.3.1"
 
 prr@~0.0.0:
   version "0.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
+  resolved "https://registry.yarnpkg.com/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
 
 pseudomap@^1.0.1:
   version "1.0.2"
@@ -3425,7 +3440,7 @@ pseudomap@^1.0.1:
 
 punycode@^1.4.1:
   version "1.4.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
 qs@~6.3.0:
   version "6.3.2"
@@ -3433,7 +3448,7 @@ qs@~6.3.0:
 
 qs@~6.4.0:
   version "6.4.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
 randomatic@^1.1.3:
   version "1.1.6"
@@ -3469,7 +3484,7 @@ react-test-renderer@^15.5.4:
 
 react@15.5.4:
   version "15.5.4"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
   dependencies:
     fbjs "^0.8.9"
     loose-envify "^1.1.0"
@@ -3478,7 +3493,7 @@ react@15.5.4:
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/read-pkg-up/-/read-pkg-up-1.0.1.tgz#9d63c13276c065918d57f002a57f40a1b643fb02"
+  resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-1.0.1.tgz#9d63c13276c065918d57f002a57f40a1b643fb02"
   dependencies:
     find-up "^1.0.0"
     read-pkg "^1.0.0"
@@ -3492,7 +3507,7 @@ read-pkg-up@^2.0.0:
 
 read-pkg@^1.0.0:
   version "1.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/read-pkg/-/read-pkg-1.1.0.tgz#f5ffaa5ecd29cb31c0474bca7d756b6bb29e3f28"
+  resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-1.1.0.tgz#f5ffaa5ecd29cb31c0474bca7d756b6bb29e3f28"
   dependencies:
     load-json-file "^1.0.0"
     normalize-package-data "^2.3.2"
@@ -3508,7 +3523,7 @@ read-pkg@^2.0.0:
 
 readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.1.4, readable-stream@^2.2.2:
   version "2.2.9"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/readable-stream/-/readable-stream-2.2.9.tgz#cf78ec6f4a6d1eb43d26488cac97f042e74b7fc8"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.9.tgz#cf78ec6f4a6d1eb43d26488cac97f042e74b7fc8"
   dependencies:
     buffer-shims "~1.0.0"
     core-util-is "~1.0.0"
@@ -3627,7 +3642,7 @@ request@2.79.0:
 
 request@^2.79.0, request@^2.81.0:
   version "2.81.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:
     aws-sign2 "~0.6.0"
     aws4 "^1.2.1"
@@ -3654,7 +3669,7 @@ request@^2.79.0, request@^2.81.0:
 
 require-directory@^2.1.1:
   version "2.1.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
+  resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
 
 require-from-string@^1.1.0:
   version "1.2.1"
@@ -3662,7 +3677,7 @@ require-from-string@^1.1.0:
 
 require-main-filename@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
+  resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
 
 require-relative@0.8.7:
   version "0.8.7"
@@ -3698,7 +3713,7 @@ restore-cursor@^1.0.1:
 
 right-align@^0.1.1:
   version "0.1.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
+  resolved "https://registry.yarnpkg.com/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
   dependencies:
     align-text "^0.1.1"
 
@@ -3794,11 +3809,11 @@ rxjs@^5.0.0-beta.11:
 
 safe-buffer@^5.0.1:
   version "5.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
 
 sane@~1.6.0:
   version "1.6.0"
-  resolved "https://registry.npmjs.org/sane/-/sane-1.6.0.tgz#9610c452307a135d29c1fdfe2547034180c46775"
+  resolved "https://registry.yarnpkg.com/sane/-/sane-1.6.0.tgz#9610c452307a135d29c1fdfe2547034180c46775"
   dependencies:
     anymatch "^1.3.0"
     exec-sh "^0.2.0"
@@ -3814,11 +3829,11 @@ sax@^1.2.1:
 
 "semver@2 || 3 || 4 || 5", semver@^5.3.0:
   version "5.3.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
+  resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
 
 set-immediate-shim@^1.0.1:
   version "1.0.1"
@@ -3864,7 +3879,7 @@ slice-ansi@0.0.4:
 
 sntp@1.x.x:
   version "1.0.9"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/sntp/-/sntp-1.0.9.tgz#6541184cc90aeea6c6e7b35e2659082443c66198"
+  resolved "https://registry.yarnpkg.com/sntp/-/sntp-1.0.9.tgz#6541184cc90aeea6c6e7b35e2659082443c66198"
   dependencies:
     hoek "2.x.x"
 
@@ -3876,7 +3891,7 @@ source-map-support@^0.4.0, source-map-support@^0.4.2:
 
 source-map@^0.4.4:
   version "0.4.4"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
   dependencies:
     amdefine ">=0.0.4"
 
@@ -3886,27 +3901,27 @@ source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1:
 
 source-map@~0.2.0:
   version "0.2.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/source-map/-/source-map-0.2.0.tgz#dab73fbcfc2ba819b4de03bd6f6eaa48164b3f9d"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.2.0.tgz#dab73fbcfc2ba819b4de03bd6f6eaa48164b3f9d"
   dependencies:
     amdefine ">=0.0.4"
 
 spdx-correct@~1.0.0:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/spdx-correct/-/spdx-correct-1.0.2.tgz#4b3073d933ff51f3912f03ac5519498a4150db40"
+  resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-1.0.2.tgz#4b3073d933ff51f3912f03ac5519498a4150db40"
   dependencies:
     spdx-license-ids "^1.0.2"
 
 spdx-expression-parse@~1.0.0:
   version "1.0.4"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/spdx-expression-parse/-/spdx-expression-parse-1.0.4.tgz#9bdf2f20e1f40ed447fbe273266191fced51626c"
+  resolved "https://registry.yarnpkg.com/spdx-expression-parse/-/spdx-expression-parse-1.0.4.tgz#9bdf2f20e1f40ed447fbe273266191fced51626c"
 
 spdx-license-ids@^1.0.2:
   version "1.2.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
+  resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
+  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
 sshpk@^1.7.0:
   version "1.13.0"
@@ -3939,7 +3954,7 @@ string-length@^1.0.1:
 
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
   dependencies:
     code-point-at "^1.0.0"
     is-fullwidth-code-point "^1.0.0"
@@ -3960,7 +3975,7 @@ string_decoder@~1.0.0:
 
 stringstream@~0.0.4:
   version "0.0.5"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
+  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
 
 strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
@@ -3970,11 +3985,11 @@ strip-ansi@^3.0.0, strip-ansi@^3.0.1:
 
 strip-bom@3.0.0, strip-bom@^3.0.0:
   version "3.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+  resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
 
 strip-bom@^2.0.0:
   version "2.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/strip-bom/-/strip-bom-2.0.0.tgz#6219a85616520491f35788bdbf1447a99c7e6b0e"
+  resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-2.0.0.tgz#6219a85616520491f35788bdbf1447a99c7e6b0e"
   dependencies:
     is-utf8 "^0.2.0"
 
@@ -4038,7 +4053,7 @@ tar@^2.2.1:
 
 test-exclude@^4.1.0:
   version "4.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/test-exclude/-/test-exclude-4.1.0.tgz#04ca70b7390dd38c98d4a003a173806ca7991c91"
+  resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-4.1.0.tgz#04ca70b7390dd38c98d4a003a173806ca7991c91"
   dependencies:
     arrify "^1.0.1"
     micromatch "^2.3.11"
@@ -4068,13 +4083,13 @@ to-fast-properties@^1.0.1:
 
 tough-cookie@^2.3.2, tough-cookie@~2.3.0:
   version "2.3.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/tough-cookie/-/tough-cookie-2.3.2.tgz#f081f76e4c85720e6c37a5faced737150d84072a"
+  resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.3.2.tgz#f081f76e4c85720e6c37a5faced737150d84072a"
   dependencies:
     punycode "^1.4.1"
 
 tr46@~0.0.3:
   version "0.0.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
 
 trim-right@^1.0.1:
   version "1.0.1"
@@ -4086,7 +4101,7 @@ tryit@^1.0.1:
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
+  resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
   dependencies:
     safe-buffer "^5.0.1"
 
@@ -4100,7 +4115,7 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
 
 type-check@~0.3.2:
   version "0.3.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
+  resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
   dependencies:
     prelude-ls "~1.1.2"
 
@@ -4122,15 +4137,15 @@ uglify-js@^2.6:
     uglify-to-browserify "~1.0.0"
 
 uglify-js@^3.0.9:
-  version "3.0.10"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.0.10.tgz#e220e7dbc05ce1f9bb08268b221aa0cf152fb4e2"
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.0.11.tgz#81f594b9a24dad76e39da92f8f06e5b3bc8c2e11"
   dependencies:
     commander "~2.9.0"
     source-map "~0.5.1"
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
+  resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
 
 uid-number@^0.0.6:
   version "0.0.6"
@@ -4148,11 +4163,11 @@ user-home@^2.0.0:
 
 util-deprecate@~1.0.1:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+  resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
 uuid@^2.0.3:
   version "2.0.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
 
 uuid@^3.0.0:
   version "3.0.1"
@@ -4166,14 +4181,14 @@ v8flags@^2.0.10:
 
 validate-npm-package-license@^3.0.1:
   version "3.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/validate-npm-package-license/-/validate-npm-package-license-3.0.1.tgz#2804babe712ad3379459acfbe24746ab2c303fbc"
+  resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.1.tgz#2804babe712ad3379459acfbe24746ab2c303fbc"
   dependencies:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
 verror@1.3.6:
   version "1.3.6"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/verror/-/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"
+  resolved "https://registry.yarnpkg.com/verror/-/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"
   dependencies:
     extsprintf "1.0.2"
 
@@ -4193,7 +4208,7 @@ watch@~0.10.0:
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
 
 webidl-conversions@^4.0.0:
   version "4.0.1"
@@ -4201,13 +4216,13 @@ webidl-conversions@^4.0.0:
 
 whatwg-encoding@^1.0.1:
   version "1.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/whatwg-encoding/-/whatwg-encoding-1.0.1.tgz#3c6c451a198ee7aec55b1ec61d0920c67801a5f4"
+  resolved "https://registry.yarnpkg.com/whatwg-encoding/-/whatwg-encoding-1.0.1.tgz#3c6c451a198ee7aec55b1ec61d0920c67801a5f4"
   dependencies:
     iconv-lite "0.4.13"
 
 whatwg-fetch@>=0.10.0:
   version "2.0.3"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
 
 whatwg-url@^4.3.0:
   version "4.8.0"
@@ -4218,7 +4233,7 @@ whatwg-url@^4.3.0:
 
 which-module@^1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/which-module/-/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
+  resolved "https://registry.yarnpkg.com/which-module/-/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
 
 which@^1.2.10, which@^1.2.12, which@^1.2.9:
   version "1.2.14"
@@ -4234,19 +4249,15 @@ wide-align@^1.1.0:
 
 window-size@0.1.0:
   version "0.1.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
+  resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
 
-wordwrap@0.0.2:
+wordwrap@0.0.2, wordwrap@~0.0.2:
   version "0.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
-
-wordwrap@~0.0.2:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
 
 wordwrap@~1.0.0:
   version "1.0.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
 worker-farm@^1.3.1:
   version "1.3.1"
@@ -4264,7 +4275,7 @@ wrap-ansi@^2.0.0:
 
 wrappy@1:
   version "1.0.2"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+  resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
 write@^0.2.1:
   version "0.2.1"
@@ -4274,15 +4285,15 @@ write@^0.2.1:
 
 xml-name-validator@^2.0.1:
   version "2.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
+  resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
 
 "xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.0:
   version "4.0.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
+  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
 y18n@^3.2.1:
   version "3.2.1"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
 
 yallist@^2.0.0:
   version "2.1.2"
@@ -4314,7 +4325,7 @@ yargs@^7.0.2:
 
 yargs@~3.10.0:
   version "3.10.0"
-  resolved "http://nexus.osl.manamind.com/content/groups/npm/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
   dependencies:
     camelcase "^1.0.2"
     cliui "^2.1.0"
