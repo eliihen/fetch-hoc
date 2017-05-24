@@ -8,21 +8,23 @@ const Wrapped = props => <div />;
 const Component = fetch(exampleUrl)(Wrapped);
 
 const fakeText = jest.fn(() => Promise.resolve('mockText'));
-const fakeFetch = url => Promise.resolve({
-  text: fakeText,
-});
-
-const onCompletion = test => new Promise((resolve, reject) => {
-  setTimeout(() => {
-    try {
-      test();
-    } catch(e) {
-      reject(e);
-    }
-
-    resolve();
+const fakeFetch = url =>
+  Promise.resolve({
+    text: fakeText,
   });
-});
+
+const onCompletion = test =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      try {
+        test();
+      } catch (e) {
+        reject(e);
+      }
+
+      resolve();
+    });
+  });
 
 describe('FetchHOC', () => {
   const mockProps = {
@@ -44,7 +46,9 @@ describe('FetchHOC', () => {
       window.fetch.mockClear();
       mount(<Component />);
 
-      expect(window.fetch).toHaveBeenCalledWith(exampleUrl, { credentials: 'same-origin' });
+      expect(window.fetch).toHaveBeenCalledWith(exampleUrl, {
+        credentials: 'same-origin',
+      });
     });
   });
 
@@ -86,7 +90,7 @@ describe('FetchHOC', () => {
     it('should update the resolved URL', () => {
       const wrapper = mount(<Wrapper />);
       const wrapped = wrapper.find('FetchHOC');
-      const node = wrapped.getNode()
+      const node = wrapped.getNode();
 
       wrapper.setState({ userId: 123 });
       expect(node.getUrl()).toBe('/foo/123');
@@ -110,18 +114,22 @@ describe('FetchHOC', () => {
       window.fetch.mockClear();
       wrapper.setState({ userId: 123 });
       wrapper.update(); // Force update required
-      expect(window.fetch).toHaveBeenCalledWith('/foo/123', { credentials: 'same-origin' })
+      expect(window.fetch).toHaveBeenCalledWith('/foo/123', {
+        credentials: 'same-origin',
+      });
 
       window.fetch.mockClear();
       wrapper.setState({ userId: 234 });
       wrapper.update(); // Force update required
-      expect(window.fetch).toHaveBeenCalledWith('/foo/234', { credentials: 'same-origin' })
+      expect(window.fetch).toHaveBeenCalledWith('/foo/234', {
+        credentials: 'same-origin',
+      });
     });
   });
 
   describe('when fetch throws', () => {
     const error = new Error('MockError');
-    beforeAll(() => window.fetch = jest.fn(url => Promise.reject(error)));
+    beforeAll(() => (window.fetch = jest.fn(url => Promise.reject(error))));
 
     it('should render a component with a prop success=false and loading=false', async () => {
       const component = mount(<Component />);
@@ -139,4 +147,3 @@ describe('FetchHOC', () => {
     });
   });
 });
-

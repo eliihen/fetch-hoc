@@ -7,7 +7,10 @@ const initialState = {
   error: undefined,
 };
 
-export default (resource: string|Function, options?: RequestOptions): Function => Component => (
+export default (
+  resource: string | Function,
+  options?: RequestOptions,
+): Function => Component =>
   class FetchHOC extends React.Component {
     state = initialState;
 
@@ -18,7 +21,7 @@ export default (resource: string|Function, options?: RequestOptions): Function =
       }
 
       return url;
-    }
+    };
 
     prevUrl = this.getUrl();
     componentDidMount = () => this.fetchData(this.getUrl());
@@ -29,24 +32,32 @@ export default (resource: string|Function, options?: RequestOptions): Function =
       }
     }
 
-    fetchData = ((url) => {
+    fetchData = url => {
       this.setState(() => initialState);
-        fetch(url, Object.assign({}, {
-          credentials: 'same-origin',
-        }, options))
+      fetch(
+        url,
+        Object.assign(
+          {},
+          {
+            credentials: 'same-origin',
+          },
+          options,
+        ),
+      )
         .then(result => result.text())
         .then(data => {
           try {
             data = JSON.parse(data);
-          } catch(e) {
+          } catch (e) {
             // Not JSON
           }
 
           this.setState(() => ({ data, loading: false, success: true }));
-        }).catch(error => {
+        })
+        .catch(error => {
           this.setState(() => ({ error, loading: false, success: false }));
         });
-    })
+    };
 
     urlHasChanged = () => {
       if (typeof resource !== 'function') {
@@ -60,11 +71,9 @@ export default (resource: string|Function, options?: RequestOptions): Function =
       }
 
       return false;
-    }
+    };
 
     render() {
       return <Component {...this.props} {...this.state} />;
     }
-  }
-);
-
+  };
