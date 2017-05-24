@@ -4,11 +4,11 @@ import { mount } from 'enzyme';
 import fetch from '../src/index';
 
 const exampleUrl = 'http://example.com';
-const Wrapped = props => <div />;
+const Wrapped = () => <div />;
 const Component = fetch(exampleUrl)(Wrapped);
 
 const fakeText = jest.fn(() => Promise.resolve('mockText'));
-const fakeFetch = url =>
+const fakeFetch = () =>
   Promise.resolve({
     text: fakeText,
   });
@@ -27,11 +27,6 @@ const onCompletion = test =>
   });
 
 describe('FetchHOC', () => {
-  const mockProps = {
-    input: {},
-    meta: {},
-  };
-
   describe('when in the process of fetching', () => {
     window.fetch = jest.fn();
 
@@ -57,7 +52,7 @@ describe('FetchHOC', () => {
 
     it('should have called .text() on the response', async () => {
       const component = mount(<Component />);
-      const wrapped = component.find(Wrapped);
+      component.find(Wrapped);
 
       await onCompletion(() => expect(fakeText).toHaveBeenCalled());
     });
@@ -78,13 +73,13 @@ describe('FetchHOC', () => {
   });
 
   describe('when using a function as a resource and the props change', () => {
-    /** Needed to be able to change the props of Component after mount */
+    /* Needed to be able to change the props of Component after mount */
     class Wrapper extends React.Component {
       state = {};
       render = () => <Component {...this.state} />;
     }
     const exampleUrl = props => `/foo/${props.userId}`;
-    const Wrapped = props => <div />;
+    const Wrapped = () => <div />;
     const Component = fetch(exampleUrl)(Wrapped);
 
     it('should update the resolved URL', () => {
@@ -109,7 +104,6 @@ describe('FetchHOC', () => {
 
     it('should call fetch', async () => {
       const wrapper = mount(<Wrapper />);
-      const wrapped = wrapper.find('FetchHOC');
 
       window.fetch.mockClear();
       wrapper.setState({ userId: 123 });
@@ -129,7 +123,7 @@ describe('FetchHOC', () => {
 
   describe('when fetch throws', () => {
     const error = new Error('MockError');
-    beforeAll(() => (window.fetch = jest.fn(url => Promise.reject(error))));
+    beforeAll(() => (window.fetch = jest.fn(() => Promise.reject(error))));
 
     it('should render a component with a prop success=false and loading=false', async () => {
       const component = mount(<Component />);

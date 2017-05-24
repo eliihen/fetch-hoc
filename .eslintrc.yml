@@ -1,0 +1,38 @@
+---
+parser: babel-eslint
+
+extends:
+  - eslint:recommended
+  - plugin:flowtype/recommended
+  - plugin:import/recommended
+  - plugin:react/recommended
+  - prettier
+  - prettier/flowtype
+  - prettier/react
+
+parserOptions:
+  ecmaVersion: 6
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+    experimentalObjectRestSpread: true
+
+env:
+  browser: true
+  jest: true
+  node: true
+
+globals:
+  Promise: false
+
+rules:
+  valid-jsdoc: 2
+  react/jsx-uses-react: 1
+  react/jsx-no-undef: 2
+  react/jsx-wrap-multilines: 2
+
+plugins:
+  - import
+  - react
+  - flowtype
+
