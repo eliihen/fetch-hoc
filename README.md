@@ -1,5 +1,9 @@
 # fetch-hoc
 
+[![Build Status](https://travis-ci.org/esphen/fetch-hoc.svg?branch=master)](https://travis-ci.org/esphen/fetch-hoc)
+[![Coverage Status](https://coveralls.io/repos/github/esphen/fetch-hoc/badge.svg?branch=master)](https://coveralls.io/github/esphen/fetch-hoc?branch=master)
+[![npm version](https://badge.fury.io/js/fetch-hoc.svg)](https://badge.fury.io/js/fetch-hoc)
+
 A React higher order component for fetching data from a server and passing the
 result as props.
 
@@ -7,7 +11,9 @@ Using a HoC for fetching data is easier and more legible than redux, while
 at the same time being more clear and consise than writing utilities and
 extending components.
 
-Automatically fe-fetches if the resource URL changes.
+The resource can be either a string or a function. If the resouce is a function,
+then the HoC will automatically re-fetch the resouce when the resource URL
+changes.
 
 ## Synopsis
 
@@ -27,7 +33,7 @@ type Options = {
    */
 };
 
-fetch(url: String|Function, options: Options)(component: React.Component)
+fetch(url: string|Function, options: Options)(component: React.Component)
 ```
 
 The HoC will inject the following props:
