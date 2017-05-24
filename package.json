@@ -7,7 +7,7 @@
   "author": "Espen Henriksen",
   "license": "MIT",
   "scripts": {
-    "precommit": "lint-staged",
+    "precommit": "npm run flow && lint-staged",
     "prepublish": "npm run clean && npm run build",
     "flow": "flow",
     "prettier": "prettier --single-quote --trailing-comma=all",
@@ -23,7 +23,6 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run flow",
       "npm run lint",
       "npm test",
       "npm run prettier -- --write",

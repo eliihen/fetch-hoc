@@ -28,6 +28,7 @@ const config = {
 };
 
 if (env === 'production') {
+  // prettier-ignore
   config.plugins.push(
     uglify({
       compress: {
@@ -36,7 +37,7 @@ if (env === 'production') {
         unsafe_comps: true,
         warnings: false,
       },
-    }),
+    })
   );
 }
 
