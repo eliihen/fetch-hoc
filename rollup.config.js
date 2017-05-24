@@ -8,7 +8,6 @@ const env = process.env.NODE_ENV;
 
 const config = {
   entry: 'src/index.js',
-  dest: 'dist/bundle.js',
   format: 'umd',
   moduleName: 'FetchHOC',
   sourceMap: true,

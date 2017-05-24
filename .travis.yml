@@ -1,0 +1,8 @@
+language: node_js
+cache: yarn
+script:
+  - npm run flow
+  - npm run lint
+  - npm test
+  - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+
