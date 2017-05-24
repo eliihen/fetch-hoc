@@ -34,16 +34,15 @@ export default (
 
     fetchData = url => {
       this.setState(() => initialState);
-      fetch(
-        url,
-        Object.assign(
-          {},
-          {
-            credentials: 'same-origin',
-          },
-          options,
-        ),
-      )
+      const init = Object.assign(
+        {},
+        {
+          credentials: 'same-origin',
+        },
+        options,
+      );
+
+      fetch(url, init)
         .then(result => result.text())
         .then(data => {
           try {
