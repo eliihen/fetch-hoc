@@ -23,6 +23,14 @@ fetch('/some/static/resource')(Component)
 fetch(props => `/some/resource/${props.someProp}`)(Component)
 ```
 
+## Installation
+
+```js
+yarn add fetch-hoc
+# or
+npm i -S fetch-hoc
+```
+
 ## API
 ```js
 // @flow
@@ -47,9 +55,11 @@ The HoC will inject the following props:
 
 ## Example: Basic
 
-Simply wrap your component in the result of the `fetch` function. Using this
-method enables most of your components to be written as functional stateless
-components, which is great for legibility.
+Now it's my job to tell you why this library is cool.
+
+Simply wrap your component in the result of the `fetch` function to get started.
+Using this method enables most of your components to be written as functional
+stateless components, which is great for legibility and testabiliy.
 
 ```js
 const FooComponent = props => {
@@ -96,16 +106,16 @@ example, to add an easily reusable loading icon and error message:
 export default Component => props => (
   props.loading
     ? <YourLoadingComponent />
-    : <Component {...props />
+    : <Component {...props} />
 );
 ```
 
 ```js
 // withErrorMessage.js
-const withErrorMessage = message => Component => props => (
+export default message => Component => props => (
   props.error
     ? <div className="error">{message}</div>
-    : <Component {...props />
+    : <Component {...props} />
 );
 ```
 
@@ -114,7 +124,12 @@ const withErrorMessage = message => Component => props => (
 import withLoadingAnimation from './withLoadingAnimation';
 import withErrorMessage from './withErrorMessage';
 
-class FooComponent { /* ... */ }
+const FooComponent = ({ data }) => (
+  <div>
+    <h1>I will only render on a successfully completed fetch!</h1>
+    <pre>{data.toString()}</pre>
+  </div>
+);
 
 export default compose(
   fetch('/foo'),
@@ -129,8 +144,8 @@ What about if you need a subset of the data, and the entire dataset is not
 convenient to work with? Simple, add a HoC for that:
 
 ```js
-const normalize = normalize => Component => ({ data, ..rest }) => (
-  <Component data={normalize(data)} {...rest} />
+const normalize = func => Component => ({ data, ..rest }) => (
+  <Component data={func(data)} {...rest} />
 );
 
 export default compose(
