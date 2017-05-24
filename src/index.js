@@ -31,7 +31,6 @@ export default (resource: string|Function, options?: RequestOptions): Function =
 
     fetchData = ((url) => {
       this.setState(() => initialState);
-      try {
         fetch(url, Object.assign({}, {
           credentials: 'same-origin',
         }, options))
@@ -44,10 +43,9 @@ export default (resource: string|Function, options?: RequestOptions): Function =
           }
 
           this.setState(() => ({ data, loading: false, success: true }));
+        }).catch(error => {
+          this.setState(() => ({ error, loading: false, success: false }));
         });
-      } catch (error) {
-        this.setState(() => ({ error, loading: false, success: false }));
-      }
     })
 
     urlHasChanged = () => {
