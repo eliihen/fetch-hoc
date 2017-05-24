@@ -5,6 +5,7 @@
   "main": "dist/bundle.js",
   "module": "src/index.js",
   "scripts": {
+    "flow": "flow",
     "prepublish": "npm run build",
     "test": "jest",
     "build": "NODE_ENV=production rollup -c"
@@ -20,6 +21,7 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "enzyme": "2.8.2",
+    "flow-bin": "^0.46.0",
     "jest": "20.0.3",
     "jest-enzyme": "^3.1.1",
     "react": "15.5.4",

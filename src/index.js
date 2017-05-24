@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 
 const initialState = {
@@ -6,13 +7,13 @@ const initialState = {
   error: undefined,
 };
 
-export default (resource, options) => Component => (
+export default (resource: string|Function, options?: RequestOptions): Function => Component => (
   class FetchHOC extends React.Component {
     state = initialState;
 
     getUrl = () => {
       let url = resource;
-      if (typeof url === 'function') {
+      if (typeof resource === 'function') {
         url = resource(this.props);
       }
 
@@ -50,6 +51,10 @@ export default (resource, options) => Component => (
     })
 
     urlHasChanged = () => {
+      if (typeof resource !== 'function') {
+        return this.prevUrl !== resource;
+      }
+
       const currentUrl = resource(this.props);
       if (this.prevUrl !== currentUrl) {
         this.prevUrl = currentUrl;
