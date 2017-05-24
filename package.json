@@ -6,24 +6,32 @@
   "module": "src/index.js",
   "scripts": {
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "NODE_ENV=production rollup -c"
   },
   "author": "Espen Henriksen",
   "license": "MIT",
   "devDependencies": {
+    "babel-jest": "^20.0.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "enzyme": "2.8.2",
+    "jest": "20.0.3",
+    "jest-enzyme": "^3.1.1",
+    "react": "15.5.4",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4",
     "rollup": "^0.41.6",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-replace": "^1.1.1",
-    "rollup-plugin-uglify": "^2.0.0"
+    "rollup-plugin-uglify": "^2.0.0",
+    "rollup-watch": "^3.2.2"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
@@ -42,5 +50,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/esphen/fetch-hoc.git"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js"
   }
 }

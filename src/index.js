@@ -1,10 +1,14 @@
 import React from 'react';
 
+const initialState = {
+  loading: true,
+  success: undefined,
+  error: undefined,
+};
+
 export default (resource, options) => Component => (
   class FetchHOC extends React.Component {
-    state = {
-      loading: true,
-    };
+    state = initialState;
 
     getUrl = () => {
       let url = resource;
@@ -16,39 +20,38 @@ export default (resource, options) => Component => (
     }
 
     prevUrl = this.getUrl();
+    componentDidMount = () => this.fetchData(this.getUrl());
 
-    componentDidMount() {
-      this.fetchData(this.getUrl());
-    }
-
-    componentWillReceiveProps(newProps) {
+    componentDidUpdate() {
       if (typeof resource === 'function' && this.urlHasChanged()) {
-        this.fetchData();
+        this.fetchData(this.getUrl());
       }
     }
 
-    fetchData = (async (url) => {
+    fetchData = ((url) => {
+      this.setState(() => initialState);
       try {
-        const result = await fetch(url, Object.assign({}, {
+        fetch(url, Object.assign({}, {
           credentials: 'same-origin',
-        }, options));
+        }, options))
+        .then(result => result.text())
+        .then(data => {
+          try {
+            data = JSON.parse(data);
+          } catch(e) {
+            // Not JSON
+          }
 
-        let data = await result.text();
-        try {
-          data = JSON.parse(data);
-        } catch(e) {
-          // Not JSON
-        }
-
-        this.setState({ data, loading: false, success: true });
+          this.setState(() => ({ data, loading: false, success: true }));
+        });
       } catch (error) {
-        this.setState({ error, success: false });
+        this.setState(() => ({ error, loading: false, success: false }));
       }
     })
 
     urlHasChanged = () => {
       const currentUrl = resource(this.props);
-      if (prevUrl !== currentUrl) {
+      if (this.prevUrl !== currentUrl) {
         this.prevUrl = currentUrl;
         return true;
       }
