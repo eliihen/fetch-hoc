@@ -17,5 +17,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial (buggy) release!
 
-[0.1.0]: https://github.com/esphen/fetch-hoc/compare/v0.0.1...v0.1.0
+[0.1.0]: https://github.com/esphen/fetch-hoc/compare/0.0.1...0.1.0
 [0.0.1]: https://github.com/esphen/fetch-hoc/commit/148b67fdfd0ad40439fc4a8f2e61418fa823441b
