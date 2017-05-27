@@ -7,21 +7,13 @@
 A React higher order component for fetching data from a server and passing the
 result as props.
 
-Using a HoC for fetching data is easier and more legible than redux, while
+Using a HoC for fetching data is easier to learn and understand than redux, while
 at the same time being more clear and consise than writing utilities and
 extending components.
 
 The resource can be either a string or a function. If the resouce is a function,
 then the HoC will automatically re-fetch the resouce when the resource URL
 changes.
-
-## Synopsis
-
-```js
-fetch('/some/static/resource')(Component)
-// Or
-fetch(props => `/some/resource/${props.someProp}`)(Component)
-```
 
 ## Installation
 
@@ -31,35 +23,33 @@ yarn add fetch-hoc
 npm i -S fetch-hoc
 ```
 
-## API
-```js
-// @flow
+If you don't yet use npm or a bundler like webpack, you can get a UMD bundle 
+from unpkg. Simply add one of the following links into your app, and the library 
+will be accessible as `FetchHOC` on `window`. Remember to replace `[VERSION]`
+with the version you want.
 
-type Options = {
-  /* The same as the Fetch API options, see
-   * https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
-   */
-};
+- Minified: https://unpkg.com/fetch-hoc@[VERSION]/dist/fetch-hoc.min.js
+- Non-minified: https://unpkg.com/fetch-hoc@[VERSION]/dist/fetch-hoc.js
 
-fetch(url: string|Function, options: Options)(component: React.Component)
+```html
+<script src="https://unpkg.com/fetch-hoc@[VERSION]/dist/fetch-hoc.min.js"></script>
 ```
 
-The HoC will inject the following props:
-
-|  Prop     | Type    | Description                                    |
-|-----------|---------|------------------------------------------------|
-| `data`    | Object  | The data returned from the server              |
-| `error`   | Error   | Any error that occured while fetching the data |
-| `loading` | boolean | Whether the request is currently in flight     |
-| `success` | boolean | Whether the request was successfully fetched   |
-
-## Example: Basic
+## Usage
 
 Now it's my job to tell you why this library is cool.
 
 Simply wrap your component in the result of the `fetch` function to get started.
 Using this method enables most of your components to be written as functional
 stateless components, which is great for legibility and testabiliy.
+
+```js
+fetch('/some/static/resource')(Component)
+// Or
+fetch(props => `/some/resource/${props.someProp}`)(Component)
+```
+
+Here is a more complete example:
 
 ```js
 const FooComponent = props => {
@@ -153,3 +143,25 @@ export default compose(
   normalize(data => data.rows.filter(row => row.enabled))
 );
 ```
+
+## API
+```js
+// @flow
+
+type Options = {
+  /* The same as the Fetch API options, see
+   * https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
+   */
+};
+
+fetch(url: string|Function, options: Options)(component: React.Component)
+```
+
+The HoC will inject the following props:
+
+|  Prop     | Type    | Description                                    |
+|-----------|---------|------------------------------------------------|
+| `data`    | Object  | The data returned from the server              |
+| `error`   | Error   | Any error that occured while fetching the data |
+| `loading` | boolean | Whether the request is currently in flight     |
+| `success` | boolean | Whether the request was successfully fetched   |
