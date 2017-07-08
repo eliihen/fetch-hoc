@@ -1,18 +1,16 @@
 // @flow
 import React from 'react';
 
-const initialState = {
-  loading: true,
-  success: undefined,
-  error: undefined,
-};
-
 export default (
   resource: string | Function,
   options?: RequestOptions,
 ): Function => Component =>
   class FetchHOC extends React.Component {
-    state = initialState;
+    state = {
+      loading: false,
+      success: undefined,
+      error: undefined,
+    };
 
     getUrl = () => {
       let url = resource;
@@ -33,17 +31,27 @@ export default (
     }
 
     fetchData = url => {
-      this.setState(() => initialState);
-      const init = Object.assign(
-        {},
-        {
-          credentials: 'same-origin',
-        },
-        options,
-      );
+      if (!url) return;
 
+      // About to start fetching, set loading state
+      this.setState(() => ({
+        loading: true,
+        success: undefined,
+        error: undefined,
+        response: undefined,
+      }));
+
+      const init = {
+        credentials: 'same-origin',
+        ...options,
+      };
+
+      let response;
       fetch(url, init)
-        .then(result => result.text())
+        .then(result => {
+          response = result;
+          return result.text();
+        })
         .then(data => {
           try {
             data = JSON.parse(data);
@@ -51,10 +59,31 @@ export default (
             // Not JSON
           }
 
-          this.setState(() => ({ data, loading: false, success: true }));
+          if (response.status >= 400 && response.status <= 599) {
+            this.setState(() => ({
+              data,
+              error: new Error(response.statusText),
+              loading: false,
+              success: false,
+              response,
+            }));
+            return;
+          }
+
+          this.setState(() => ({
+            data,
+            loading: false,
+            success: true,
+            response,
+          }));
         })
         .catch(error => {
-          this.setState(() => ({ error, loading: false, success: false }));
+          this.setState(() => ({
+            error,
+            loading: false,
+            success: false,
+            response,
+          }));
         });
     };
 

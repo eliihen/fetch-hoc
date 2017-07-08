@@ -5,7 +5,8 @@ import fetch from '../src/index';
 
 const exampleUrl = 'http://example.com';
 const Wrapped = () => <div />;
-const Component = fetch(exampleUrl)(Wrapped);
+const buildComponent = url => fetch(url)(Wrapped);
+const Component = buildComponent(exampleUrl);
 
 const fakeText = jest.fn(() => Promise.resolve('mockText'));
 const fakeFetch = () =>
@@ -27,10 +28,37 @@ const onCompletion = test =>
   });
 
 describe('FetchHOC', () => {
+  describe('when parsing URLs', () => {
+    window.fetch = jest.fn();
+    it('should ignore falsey URLs', async () => {
+      const Component = buildComponent(null);
+      const component = mount(<Component />);
+      const wrapped = component.find(Wrapped);
+
+      await onCompletion(() => expect(wrapped).toHaveProp('loading', false));
+      await onCompletion(() =>
+        expect(wrapped).toHaveProp('success', undefined),
+      );
+      await onCompletion(() => expect(wrapped).toHaveProp('error', undefined));
+    });
+
+    it('should ignore functions returning falsey URLs', async () => {
+      const Component = buildComponent(() => '');
+      const component = mount(<Component />);
+      const wrapped = component.find(Wrapped);
+
+      await onCompletion(() => expect(wrapped).toHaveProp('loading', false));
+      await onCompletion(() =>
+        expect(wrapped).toHaveProp('success', undefined),
+      );
+      await onCompletion(() => expect(wrapped).toHaveProp('error', undefined));
+    });
+  });
+
   describe('when in the process of fetching', () => {
     window.fetch = jest.fn();
-
     it('should render a component with loading=true', () => {
+      window.fetch.mockClear();
       const component = mount(<Component />);
       const wrapped = component.find(Wrapped);
 
@@ -138,6 +166,32 @@ describe('FetchHOC', () => {
       const wrapped = component.find(Wrapped);
 
       await onCompletion(() => expect(wrapped).toHaveProp('error', error));
+    });
+  });
+
+  describe('when the fetch is not a success', () => {
+    beforeAll(
+      () =>
+        (window.fetch = jest.fn(() =>
+          Promise.resolve({
+            ok: false,
+            status: 500,
+            statusText: 'Server Error',
+            text: fakeText,
+          }),
+        )),
+    );
+
+    it('should set the failure in the state', async () => {
+      const component = mount(<Component />);
+      const wrapped = component.find(Wrapped);
+
+      await onCompletion(() => expect(wrapped).toHaveProp('success', false));
+      await onCompletion(() => expect(wrapped).toHaveProp('loading', false));
+      await onCompletion(() =>
+        expect(wrapped).toHaveProp('error', new Error('Server Error')),
+      );
+      await onCompletion(() => expect(wrapped).toHaveProp('data', 'mockText'));
     });
   });
 });

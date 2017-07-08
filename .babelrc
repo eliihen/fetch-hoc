@@ -18,6 +18,7 @@
     ["transform-es2015-destructuring", { "loose": true }],
     "transform-es2015-block-scoping",
     "babel-plugin-transform-flow-strip-types",
+    "babel-plugin-transform-object-rest-spread",
     "transform-react-jsx",
     "syntax-jsx"
   ],
