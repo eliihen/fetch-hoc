@@ -1,6 +1,6 @@
 {
   "name": "fetch-hoc",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A react HoC for fetching a resource and passing to props",
   "main": "./lib/index.js",
   "module": "es/index.js",
