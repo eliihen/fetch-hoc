@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 
 import { mount } from 'enzyme';
@@ -8,6 +9,7 @@ const Wrapped = () => <div />;
 const buildComponent = url => fetch(url)(Wrapped);
 const Component = buildComponent(exampleUrl);
 
+const fakeConsoleError = jest.fn(console.error);
 const fakeText = jest.fn(() => Promise.resolve('mockText'));
 const fakeFetch = () =>
   Promise.resolve({
@@ -83,6 +85,17 @@ describe('FetchHOC', () => {
       component.find(Wrapped);
 
       await onCompletion(() => expect(fakeText).toHaveBeenCalled());
+    });
+
+    it('should not throw error if component is unmounted', async () => {
+      fakeConsoleError.mockReset();
+      console.error = fakeConsoleError;
+      const component = mount(<Component />);
+      component.unmount();
+
+      await onCompletion(() =>
+        expect(fakeConsoleError).toHaveBeenCalledTimes(0),
+      );
     });
 
     it('should render a component with the prop loading=false', async () => {
@@ -167,6 +180,17 @@ describe('FetchHOC', () => {
 
       await onCompletion(() => expect(wrapped).toHaveProp('error', error));
     });
+
+    it('should not throw error if component is unmounted', async () => {
+      fakeConsoleError.mockReset();
+      console.error = fakeConsoleError;
+      const component = mount(<Component />);
+      component.unmount();
+
+      await onCompletion(() =>
+        expect(fakeConsoleError).toHaveBeenCalledTimes(0),
+      );
+    });
   });
 
   describe('when the fetch is not a success', () => {
@@ -192,6 +216,17 @@ describe('FetchHOC', () => {
         expect(wrapped).toHaveProp('error', new Error('Server Error')),
       );
       await onCompletion(() => expect(wrapped).toHaveProp('data', 'mockText'));
+    });
+
+    it('should not throw error if component is unmounted', async () => {
+      fakeConsoleError.mockReset();
+      console.error = fakeConsoleError;
+      const component = mount(<Component />);
+      component.unmount();
+
+      await onCompletion(() =>
+        expect(fakeConsoleError).toHaveBeenCalledTimes(0),
+      );
     });
   });
 });

@@ -6,6 +6,8 @@ export default (
   options?: RequestOptions,
 ): Function => Component =>
   class FetchHOC extends React.Component {
+    _isMounted: boolean;
+
     state = {
       loading: false,
       success: undefined,
@@ -22,12 +24,19 @@ export default (
     };
 
     prevUrl = this.getUrl();
-    componentDidMount = () => this.fetchData(this.getUrl());
+    componentDidMount = () => {
+      this._isMounted = true;
+      this.fetchData(this.getUrl());
+    };
 
     componentDidUpdate() {
       if (typeof resource === 'function' && this.urlHasChanged()) {
         this.fetchData(this.getUrl());
       }
+    }
+
+    componentWillUnmount() {
+      this._isMounted = false;
     }
 
     fetchData = url => {
@@ -59,6 +68,10 @@ export default (
             // Not JSON
           }
 
+          if (!this._isMounted) {
+            return;
+          }
+
           if (response.status >= 400 && response.status <= 599) {
             this.setState(() => ({
               data,
@@ -78,6 +91,10 @@ export default (
           }));
         })
         .catch(error => {
+          if (!this._isMounted) {
+            return;
+          }
+
           this.setState(() => ({
             error,
             loading: false,
