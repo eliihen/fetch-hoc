@@ -60,7 +60,7 @@ export default (
       let response;
       fetch(url, init)
         .then(result => {
-          response = result;
+          response = result.clone();
           return result.text();
         })
         .then(data => {
@@ -70,9 +70,7 @@ export default (
             // Not JSON
           }
 
-          if (!this._isMounted) {
-            return;
-          }
+          if (!this._isMounted) return;
 
           if (response.status >= 400 && response.status <= 599) {
             this.setState(() => ({
@@ -93,9 +91,7 @@ export default (
           }));
         })
         .catch(error => {
-          if (!this._isMounted) {
-            return;
-          }
+          if (!this._isMounted) return;
 
           this.setState(() => ({
             error,

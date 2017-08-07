@@ -11,10 +11,19 @@ const Component = buildComponent(exampleUrl);
 
 const fakeConsoleError = jest.fn(console.error);
 const fakeText = jest.fn(() => Promise.resolve('mockText'));
+
+// Used to check for response.clone()
+const clonedFetch = () =>
+  Promise.resolve({
+    text: fakeText,
+    clone: fakeClone,
+  });
+
+const fakeClone = jest.fn(() => clonedFetch);
 const fakeFetch = () =>
   Promise.resolve({
     text: fakeText,
-    clone: () => fakeFetch,
+    clone: fakeClone,
   });
 
 const onCompletion = test =>
@@ -121,6 +130,8 @@ describe('FetchHOC', () => {
   describe('when fetching has succeeded', () => {
     window.fetch = jest.fn(fakeFetch);
 
+    beforeEach(fakeClone.mockClear);
+
     it('should have called .text() on the response', async () => {
       const component = mount(<Component />);
       component.find(Wrapped);
@@ -151,6 +162,19 @@ describe('FetchHOC', () => {
       const wrapped = component.find(Wrapped);
 
       await onCompletion(() => expect(wrapped).toHaveProp('data', 'mockText'));
+    });
+
+    it('should expose a cloned response', async () => {
+      const component = mount(<Component />);
+      const wrapped = component.find(Wrapped);
+
+      await onCompletion(() => expect(fakeClone).toHaveBeenCalled());
+      await onCompletion(() =>
+        expect(wrapped).not.toHaveProp('response', fakeFetch),
+      );
+      await onCompletion(() =>
+        expect(wrapped).toHaveProp('response', clonedFetch),
+      );
     });
   });
 
