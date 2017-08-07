@@ -25,6 +25,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Handle 4xx and 5xx responses by setting props to an error state (#2)
 - Add new `response` prop which contains the `fetch` response
 
+### Changed
+- The `loading` prop is now `true` when the component mounts
+
 ## [0.1.0] - 2017-05-25
 ### Added
 - Reactive URL by passing a function as the first parameter
