@@ -7,24 +7,27 @@
 A React higher order component for fetching data from a server and passing the
 result as props.
 
-Using a HoC for fetching data is easier to learn and understand than redux, while
-at the same time being more clear and consise than writing utilities and
-extending components.
+Using a HoC for fetching data is easier to understand and master than redux,
+while at the same time being more consise than writing utilities and extending
+components.
 
 The resource can be either a string or a function. If the resouce is a function,
 then the HoC will automatically re-fetch the resouce when the resource URL
 changes.
 
+This library is [super tiny][size], measuring just over 1kB gzipped, and has no
+dependencies!
+
 ## Installation
 
-```js
+```bash
 yarn add fetch-hoc
 # or
 npm i -S fetch-hoc
 ```
 
-If you don't yet use npm or a bundler like webpack, you can get a UMD bundle 
-from unpkg. Simply add one of the following links into your app, and the library 
+If you don't yet use npm or a bundler like webpack, you can get a UMD bundle
+from unpkg. Simply add one of the following links into your app, and the library
 will be accessible as `FetchHOC` on `window`. Remember to replace `[VERSION]`
 with the version you want.
 
@@ -54,7 +57,7 @@ Here is a more complete example:
 ```js
 const FooComponent = props => {
   if (props.error) {
-    return <div className="error">An error occured! {error.toString()}</div>;
+    return <div className="error">{`An error occured! ${props.error}`}</div>;
   }
   if (props.loading) {
     return <div className="loading">Loading...</div>;
@@ -159,9 +162,12 @@ fetch(url: string|Function, options: Options)(component: React.Component)
 
 The HoC will inject the following props:
 
-|  Prop     | Type    | Description                                    |
-|-----------|---------|------------------------------------------------|
-| `data`    | Object  | The data returned from the server              |
-| `error`   | Error   | Any error that occured while fetching the data |
-| `loading` | boolean | Whether the request is currently in flight     |
-| `success` | boolean | Whether the request was successfully fetched   |
+|  Prop      | Type     | Description                                                  |
+|------------|----------|--------------------------------------------------------------|
+| `data`     | Object   | The data returned from the server                            |
+| `error`    | Error    | Any error that occured while fetching the data               |
+| `loading`  | boolean  | Whether the request is currently in flight                   |
+| `success`  | boolean  | Whether the request was successfully fetched                 |
+| `response` | Response | The full response with headers. Cloned and can be read again |
+
+[size]: https://cost-of-modules.herokuapp.com/?p=fetch-hoc
