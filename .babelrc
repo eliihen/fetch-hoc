@@ -33,17 +33,26 @@
       "plugins": [
         ["transform-es2015-modules-commonjs", { "loose": true }],
         "transform-class-properties"
+      ],
+      "ignore": [
+        "*.test.js"
       ]
     },
     "es": {
       "plugins": [
         "transform-class-properties"
+      ],
+      "ignore": [
+        "*.test.js"
       ]
     },
     "rollup": {
       "plugins": [
         "transform-class-properties",
         "external-helpers"
+      ],
+      "ignore": [
+        "*.test.js"
       ]
     }
   }

@@ -14,6 +14,7 @@ const fakeText = jest.fn(() => Promise.resolve('mockText'));
 const fakeFetch = () =>
   Promise.resolve({
     text: fakeText,
+    clone: () => fakeFetch,
   });
 
 const onCompletion = test =>
@@ -234,16 +235,16 @@ describe('FetchHOC', () => {
   });
 
   describe('when the fetch is not a success', () => {
+    const failedFetch = {
+      ok: false,
+      status: 500,
+      statusText: 'Server Error',
+      text: fakeText,
+      clone: () => failedFetch,
+    };
+
     beforeAll(
-      () =>
-        (window.fetch = jest.fn(() =>
-          Promise.resolve({
-            ok: false,
-            status: 500,
-            statusText: 'Server Error',
-            text: fakeText,
-          }),
-        )),
+      () => (window.fetch = jest.fn(() => Promise.resolve(failedFetch))),
     );
 
     it('should set the failure in the state', async () => {
