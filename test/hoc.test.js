@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import fetch from '../src/index';
 
 const exampleUrl = 'http://example.com';
@@ -54,6 +54,46 @@ describe('FetchHOC', () => {
         expect(wrapped).toHaveProp('success', undefined),
       );
       await onCompletion(() => expect(wrapped).toHaveProp('error', undefined));
+    });
+
+    it('should initialize loading to false when given falsey URLs', () => {
+      let Component = buildComponent(() => '');
+      let component = shallow(<Component />);
+      let wrapped = component.find(Wrapped);
+
+      expect(wrapped).toHaveProp('loading', false);
+
+      Component = buildComponent(null);
+      component = shallow(<Component />);
+      wrapped = component.find(Wrapped);
+
+      expect(wrapped).toHaveProp('loading', false);
+
+      Component = buildComponent(props => props.url);
+      component = shallow(<Component />);
+      wrapped = component.find(Wrapped);
+
+      expect(wrapped).toHaveProp('loading', false);
+    });
+
+    it('should initialize loading to true when given truthy URLs', () => {
+      let Component = buildComponent(() => 'http://bojackhorseman.com');
+      let component = shallow(<Component />);
+      let wrapped = component.find(Wrapped);
+
+      expect(wrapped).toHaveProp('loading', true);
+
+      Component = buildComponent('http://bojackhorseman.com');
+      component = shallow(<Component />);
+      wrapped = component.find(Wrapped);
+
+      expect(wrapped).toHaveProp('loading', true);
+
+      Component = buildComponent(props => props.url);
+      component = shallow(<Component url="http://bojackhorseman.com" />);
+      wrapped = component.find(Wrapped);
+
+      expect(wrapped).toHaveProp('loading', true);
     });
   });
 

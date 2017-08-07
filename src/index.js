@@ -8,12 +8,6 @@ export default (
   class FetchHOC extends React.Component {
     _isMounted: boolean;
 
-    state = {
-      loading: false,
-      success: undefined,
-      error: undefined,
-    };
-
     getUrl = () => {
       let url = resource;
       if (typeof resource === 'function') {
@@ -23,7 +17,15 @@ export default (
       return url;
     };
 
+    state = {
+      // Ensure only truthy URLs start off as loading (#3)
+      loading: !!this.getUrl(),
+      success: undefined,
+      error: undefined,
+    };
+
     prevUrl = this.getUrl();
+
     componentDidMount = () => {
       this._isMounted = true;
       this.fetchData(this.getUrl());
