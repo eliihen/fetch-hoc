@@ -227,6 +227,51 @@ describe('FetchHOC', () => {
     });
   });
 
+  describe('when component updates and refresh is set to true', () => {
+    /* Needed to be able to change the props of Component after mount */
+    const exampleUrl = 'http://example.com';
+    const Wrapped = () => <div />;
+    const Component = fetch(exampleUrl)(Wrapped);
+
+    it('should only fetch once on mount', async () => {
+      window.fetch.mockClear();
+
+      const wrapper = mount(<Component refetch={true} />);
+
+      expect(window.fetch).toHaveBeenCalledTimes(1);
+      expect(window.fetch).toHaveBeenCalledWith('http://example.com', {
+        credentials: 'same-origin',
+      });
+
+      wrapper.unmount();
+    });
+
+    it('should fetch again on update even if url is the same', async () => {
+      window.fetch.mockClear();
+
+      const wrapper = mount(<Component refetch={true} />);
+
+      expect(window.fetch).toHaveBeenCalledTimes(1);
+      expect(window.fetch).toHaveBeenLastCalledWith('http://example.com', {
+        credentials: 'same-origin',
+      });
+
+      wrapper.update();
+      expect(window.fetch).toHaveBeenCalledTimes(2);
+      expect(window.fetch).toHaveBeenLastCalledWith('http://example.com', {
+        credentials: 'same-origin',
+      });
+
+      wrapper.update();
+      expect(window.fetch).toHaveBeenCalledTimes(3);
+      expect(window.fetch).toHaveBeenLastCalledWith('http://example.com', {
+        credentials: 'same-origin',
+      });
+
+      wrapper.unmount();
+    });
+  });
+
   describe('when fetch throws', () => {
     const error = new Error('MockError');
     beforeAll(() => (window.fetch = jest.fn(() => Promise.reject(error))));
