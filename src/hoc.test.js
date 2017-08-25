@@ -227,13 +227,29 @@ describe('FetchHOC', () => {
     });
   });
 
-  describe('when component updates and refresh is set to true', () => {
+  describe('refetch prop behavior', () => {
     /* Needed to be able to change the props of Component after mount */
     const exampleUrl = 'http://example.com';
     const Wrapped = () => <div />;
     const Component = fetch(exampleUrl)(Wrapped);
 
-    it('should only fetch once on mount', async () => {
+    it('when not true should not fetch again on update', async () => {
+      window.fetch.mockClear();
+
+      const wrapper = mount(<Component />);
+
+      expect(window.fetch).toHaveBeenCalledTimes(1);
+      expect(window.fetch).toHaveBeenCalledWith('http://example.com', {
+        credentials: 'same-origin',
+      });
+
+      wrapper.update();
+      expect(window.fetch).toHaveBeenCalledTimes(1);
+
+      wrapper.unmount();
+    });
+
+    it('when true should only fetch once on mount when set to true', async () => {
       window.fetch.mockClear();
 
       const wrapper = mount(<Component refetch={true} />);
@@ -246,7 +262,7 @@ describe('FetchHOC', () => {
       wrapper.unmount();
     });
 
-    it('should fetch again on update even if url is the same', async () => {
+    it('when true should fetch on update even if url is the same', async () => {
       window.fetch.mockClear();
 
       const wrapper = mount(<Component refetch={true} />);

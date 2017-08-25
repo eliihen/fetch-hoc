@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default (
   resource: string | Function,
@@ -8,6 +9,10 @@ export default (
   class FetchHOC extends React.Component {
     _isMounted: boolean;
     _refetched: boolean;
+
+    static propTypes = {
+      refetch: PropTypes.bool,
+    };
 
     getUrl = () => {
       let url = resource;
@@ -36,7 +41,7 @@ export default (
     componentDidUpdate() {
       if (typeof resource === 'function' && this.urlHasChanged()) {
         this.fetchData(this.getUrl());
-      } else if (this.props.refetch && this._refetched == false) {
+      } else if (this.props.refetch === true && this._refetched === false) {
         this._refetched = true;
         this.fetchData(this.getUrl());
       }
