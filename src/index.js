@@ -41,6 +41,10 @@ export default (
       this._isMounted = false;
     }
 
+    refetchData = () => {
+      this.fetchData(this.getUrl());
+    };
+
     fetchData = url => {
       if (!url) return;
 
@@ -117,6 +121,10 @@ export default (
     };
 
     render() {
-      return <Component {...this.props} {...this.state} />;
+      return (<Component
+        {...this.props}
+        {...this.state}
+        fetch={this.refetchData}
+      />);
     }
   };
