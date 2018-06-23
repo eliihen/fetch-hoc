@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.4.0] - 2018-06-23
+### Changed
+- Adds the `refetchData` prop to force the component to refetch the data without
+  changing the URL (#8) @fc
+
 ## [0.3.0] - 2017-08-07
 ### Changed
 - Initialize `loading` prop as `true` if input resource resolves to a truthy
