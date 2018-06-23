@@ -162,12 +162,13 @@ fetch(url: string|Function, options: Options)(component: React.Component)
 
 The HoC will inject the following props:
 
-|  Prop      | Type     | Description                                                  |
-|------------|----------|--------------------------------------------------------------|
-| `data`     | Object   | The data returned from the server                            |
-| `error`    | Error    | Any error that occured while fetching the data               |
-| `loading`  | boolean  | Whether the request is currently in flight                   |
-| `success`  | boolean  | Whether the request was successfully fetched                 |
-| `response` | Response | The full response with headers. Cloned and can be read again |
+|  Prop         | Type     | Description                                                       |
+|---------------|----------|-------------------------------------------------------------------|
+| `data`        | Object   | The data returned from the server                                 |
+| `error`       | Error    | Any error that occured while fetching the data                    |
+| `loading`     | boolean  | Whether the request is currently in flight                        |
+| `success`     | boolean  | Whether the request was successfully fetched                      |
+| `response`    | Response | The full response with headers. Cloned and can be read again      |
+| `refetchData` | Function | Forces the component to refetch the data without changing the url |
 
 [size]: https://cost-of-modules.herokuapp.com/?p=fetch-hoc
