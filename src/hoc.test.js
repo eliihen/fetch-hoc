@@ -299,7 +299,7 @@ describe('FetchHOC', () => {
       const buildComponent = url => fetch(url, options)(Wrapped);
       const Component = buildComponent(exampleUrl);
 
-      const component = mount(<Component header='test' />);
+      mount(<Component header='test' />);
       expect(window.fetch).toHaveBeenCalledWith('http://example.com', {
         credentials: 'same-origin',
         header: 'test'
