@@ -3,7 +3,7 @@ import React from 'react';
 
 export default (
   resource: string | Function,
-  options?: RequestOptions,
+  options?: RequestOptions | (props: {}) => RequestOptions,
 ): Function => Component =>
   class FetchHOC extends React.Component {
     _isMounted: boolean;
@@ -58,7 +58,7 @@ export default (
 
       const init = {
         credentials: 'same-origin',
-        ...options,
+        ...(typeof options === 'function' ? options(this.props) : options),
       };
 
       let response;
