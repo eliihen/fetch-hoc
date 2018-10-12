@@ -157,7 +157,7 @@ type Options = {
    */
 };
 
-fetch(url: string|Function, options: Options)(component: React.Component)
+fetch(url: string|Function, options: Options|(props: {}) => Options)(component: React.Component)
 ```
 
 The HoC will inject the following props:

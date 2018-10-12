@@ -293,5 +293,17 @@ describe('FetchHOC', () => {
         expect(fakeConsoleError).toHaveBeenCalledTimes(0),
       );
     });
+
+    it('should pass props to options if it function', async () => {
+      const options = props => ({ header: props.header })
+      const buildComponent = url => fetch(url, options)(Wrapped);
+      const Component = buildComponent(exampleUrl);
+
+      mount(<Component header='test' />);
+      expect(window.fetch).toHaveBeenCalledWith('http://example.com', {
+        credentials: 'same-origin',
+        header: 'test'
+      });
+    })
   });
 });
