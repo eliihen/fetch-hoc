@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.5.0] - 2018-10-15
+### Added
+- Adds the ability for `options` to be a function that takes props and returns
+  an `options` object,
+
 ## [0.4.0] - 2018-06-23
 ### Changed
 - Adds the `refetchData` prop to force the component to refetch the data without
@@ -46,7 +51,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial (buggy) release!
 
-[Unreleased]: https://github.com/esphen/fetch-hoc/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/esphen/fetch-hoc/compare/0.5.0...HEAD
+[0.5.0]: https://github.com/esphen/fetch-hoc/compare/v0.4.0...0.5.0
 [0.4.0]: https://github.com/esphen/fetch-hoc/compare/0.3.0...v0.4.0
 [0.3.0]: https://github.com/esphen/fetch-hoc/compare/0.2.1...0.3.0
 [0.2.1]: https://github.com/esphen/fetch-hoc/compare/0.2.0...0.2.1
