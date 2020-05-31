@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.5.1] - 2020-05-31
+### Fixed
+- Adds abort on unmount to get rid of potential memory leak (#11) @joeydebreuk
+
 ## [0.5.0] - 2018-10-15
 ### Added
 - Adds the ability for `options` to be a function that takes props and returns
