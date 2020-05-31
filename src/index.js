@@ -7,6 +7,7 @@ export default (
 ): Function => Component =>
   class FetchHOC extends React.Component {
     _isMounted: boolean;
+    _abortFetch = () => {};
 
     getUrl = () => {
       let url = resource;
@@ -39,9 +40,19 @@ export default (
 
     componentWillUnmount() {
       this._isMounted = false;
+      this._abortFetch();
     }
 
-    refetchData = () => {
+    createSignal = () => {
+      if (!window.AbortController) { return; }
+      const controller = new window.AbortController();
+      this._abortFetch = () => {
+        if (this.state.loading) { controller.abort(); }
+      };
+      return controller.signal;
+    };
+
+      refetchData = () => {
       this.fetchData(this.getUrl());
     };
 
@@ -58,6 +69,7 @@ export default (
 
       const init = {
         credentials: 'same-origin',
+        signal: this.createSignal(),
         ...(typeof options === 'function' ? options(this.props) : options),
       };
 

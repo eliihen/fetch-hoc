@@ -11,6 +11,7 @@ const Component = buildComponent(exampleUrl);
 
 const fakeConsoleError = jest.fn(console.error);
 const fakeText = jest.fn(() => Promise.resolve('mockText'));
+const fakeAbort = jest.fn(() => {});
 
 // Used to check for response.clone()
 const clonedFetch = () =>
@@ -25,6 +26,10 @@ const fakeFetch = () =>
     text: fakeText,
     clone: fakeClone,
   });
+class FakeAbortController {
+  signal = { aborted: false, onabort: null };
+  abort = fakeAbort;
+}
 
 const onCompletion = test =>
   new Promise((resolve, reject) => {
@@ -305,5 +310,25 @@ describe('FetchHOC', () => {
         header: 'test'
       });
     })
+  });
+
+  describe('when component unmounts while fetching', () => {
+    const delay = time => new Promise(res => setTimeout(res, time));
+    beforeAll(() => {
+      window.AbortController = FakeAbortController;
+      // Make sure the fetch doesnt resolve instantly...
+      window.fetch = jest.fn(async () => {
+        await delay(100);
+        return Promise.resolve({});
+      });
+    });
+
+    it('should abort request', async () => {
+      const originalAbortController = window.AbortController;
+      const component = mount(<Component />);
+      component.unmount();
+      window.AbortController = originalAbortController;
+      await onCompletion(() => expect(fakeAbort).toHaveBeenCalledTimes(1));
+    });
   });
 });
